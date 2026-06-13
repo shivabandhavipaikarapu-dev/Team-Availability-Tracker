@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.not-available {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}

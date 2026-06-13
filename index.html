@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Availability Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Team Availability Tracker</h1>
+
+    {% for member in members %}
+    <div class="card">
+
+        <h2>{{ member[1] }}</h2>
+
+        {% if member[2] == 1 %}
+            <p class="available">Available</p>
+        {% else %}
+            <p class="not-available">Not Available</p>
+        {% endif %}
+
+        <a href="/toggle/{{ member[0] }}">
+            <button>Toggle Status</button>
+        </a>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
